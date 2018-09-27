@@ -1,0 +1,8 @@
+[package]
+name = "formulate"
+version = "0.1.0"
+authors = ["Jake Pittis <jakepittis@gmail.com>"]
+
+[dependencies]
+formulate-trait = { path = "formulate-trait" }
+formulate-derive = { path = "formulate-derive" }
