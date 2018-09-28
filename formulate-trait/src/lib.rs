@@ -1,3 +1,3 @@
 pub trait Formulate {
-    fn formulate() -> String;
+    fn formulate() -> Vec<&'static str>;
 }

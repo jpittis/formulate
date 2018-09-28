@@ -5,9 +5,13 @@ extern crate formulate_derive;
 use formulate_trait::Formulate;
 
 #[derive(Formulate)]
-struct Pancakes;
+struct MyStruct {
+    one: u8,
+    two: u8,
+    three: u8,
+}
 
 #[test]
 fn it_works() {
-    assert_eq!(Pancakes::formulate(), "Hello, Macro! My name is Pancakes");
+    assert_eq!(MyStruct::formulate(), vec!["one", "two", "three"]);
 }
